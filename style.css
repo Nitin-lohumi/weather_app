@@ -80,3 +80,71 @@ h3{
     margin:.4vw;
     color:#fef6f6;
 }
+
+.condition{
+    font-size: 2.2vw;
+   }
+   .dgree{
+       font-size: 2.1vw;
+
+   }
+@media (min-width: 200px ) and (max-width: 500px) {
+   
+    .main_div .box{
+        width:80%;
+    }
+    .main_div .box h1{
+        font-size: 4vw;
+        margin:10px;
+        padding:10px;
+    }
+    .main_div .box .inner_box{
+      padding:30px;
+    }
+    .main_div .box .inner_box .search input[type='text']{
+        width:60%; 
+        font-size: 3vw;
+        margin: 1vw  0px;   
+        padding:1vw 2vw; 
+    }
+    .main_div .box .inner_box .search button{
+        font-size: 4vw;
+        padding:.5vw 1vw;
+        margin:1vw 2vw; 
+    }
+    img{
+        filter:drop-shadow(1px 3px 2px rgb(253, 253, 255));
+        margin-top:.5vw;
+        width:20vw;
+        height:20vw;
+    }
+    .report_img{
+        width:10vw;
+        height:10vw;
+        margin-top:20px;
+    }
+
+    h2{
+        font-size: 4vw;
+        text-transform: uppercase;
+         padding-left: 5px;
+        color:rgb(0, 0, 0);
+    
+    }
+    h3{
+        margin-top:5vw;
+        color:#fef6f6;
+        font-size: 4vw;
+    }
+    .condition{
+     font-size: 6vw;
+     margin:6px 0;
+    }
+    .dgree{
+        font-size: 6vw;
+        padding:10px;
+        display: block;
+        margin:10px;
+    }
+
+}

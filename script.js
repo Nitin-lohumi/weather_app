@@ -32,6 +32,21 @@ const position = async (position)=>{
   wind.innerHTML = data.wind.speed + "km/h";
   document.getElementById("error").innerHTML="";
   console.log(position);
+  if(weather.innerHTML=="Haze"){
+    image_changer.src='haze.png';
+   }
+   else if(weather.innerHTML=="Clouds"){
+    image_changer.src='clouds.png';
+   }
+   else if(weather.innerHTML=="Clear"){
+    image_changer.src='clear.png';
+   }
+   else if(weather.innerHTML=="Rain"){
+    image_changer.src='rain.png';
+   }
+   else{
+    image_changer.src='https://cdn-icons-png.flaticon.com/512/7477/7477790.png';
+   }
 }
 
 const showError = (error)=>{
@@ -47,7 +62,7 @@ const showError = (error)=>{
 
 async function search(){
     if(city.value==""){
-        document.getElementById("error").innerHTML="you have an error";
+        document.getElementById("error").innerHTML="<b style='color:yellow'>Please Enter the city Name</b>";
         weather.innerHTML="none";
         humidity.innerHTML="null";
         wind.innerHTML= "null";
@@ -71,14 +86,14 @@ async function search(){
            else if(weather.innerHTML=="Clouds"){
             image_changer.src='clouds.png';
            }
-           else if(weather.innerHTML==""){
-
-           }
            else if(weather.innerHTML=="Clear"){
             image_changer.src='clear.png';
            }
            else if(weather.innerHTML=="Rain"){
             image_changer.src='rain.png';
+           }
+           else{
+            image_changer.src='https://cdn-icons-png.flaticon.com/512/7477/7477790.png';
            }
        }
     }
