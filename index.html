@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="getLocation()">
+    <div class="main_div">
+      <div class="box">
+          <div class="inner_box"> 
+              <h1>weather App</h1> 
+            <div class="search"> 
+              <input type="text"  id="search" placeholder="Enter  your city" autocomplete="off">
+               <button onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <h1 id="error"> </h1>
+             <div>
+                 <img src="https://cdn-icons-png.flaticon.com/512/7477/7477790.png" alt="weather_img" id="weather_img">
+                 <h3 style="font-size: 2vw; color:rgb(3, 253, 228)" id="weather_condition"></h3>
+                 <span style="font-size:2vw;"id="temp"></span>
+                 <h2 style="color:rgb(77, 255, 1); 
+                 text-transform: capitalize; font-size: 1.8vw;
+                  text-shadow:2px 1px 3px rgb(65, 34, 34);" id="cityName"></h2>
+                 
+             </div>
+
+             <div class="show_report">
+                  <div>
+                    <img  src="humadity.png" alt="humadity">
+                    <h2>humidity</h2>
+                    <h3 id="humadity"></h3>
+                  </div>
+
+                  <div>
+                    <img src="winds.png" alt="wind">
+                    <h2>Wind</h2>
+                    <h3 id="wind"></h3>
+                  </div>
+                  <div>
+                    <img src="airPresser.png" alt="Airpresser">
+                    <h2>Airpresser</h2>
+                    <h3 id="Airpresser"></h3>
+                  </div>
+             </div>
+            </div> 
+       </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
